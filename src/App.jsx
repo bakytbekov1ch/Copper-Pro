@@ -2,13 +2,15 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import HomePage from "./pages/HomePage";
+import Service from "./components/Service/Service";
 
 function App() {
   return (
-    <div>
+    <div className="Wrapper">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route path="/service" element={<Service/>}/>
         </Route>
       </Routes>
     </div>
