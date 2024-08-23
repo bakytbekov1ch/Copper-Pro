@@ -1,0 +1,104 @@
+@import "../../media/style/mixin";
+
+.service {
+  padding: 50px 0;
+  @include flexbox(space-between, center);
+  .our-service {
+    @include flexbox(space-between, flex-start, column);
+    width: 48%;
+    h3 {
+      color: rgb(55, 125, 255);
+      font-family: Quicksand;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 1%;
+      text-align: left;
+    }
+    h1 {
+      color: rgb(29, 29, 29);
+      font-family: Nunito;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 130%;
+      letter-spacing: 0.3%;
+      text-align: left;
+    }
+    p {
+      color: rgb(70, 70, 70);
+      font-family: Quicksand;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 1%;
+      text-align: left;
+    }
+    div {
+      width: 100%;
+      @include flexbox(flex-end, center);
+      gap: 10px;
+      h2 {
+        color: rgb(55, 125, 255);
+        font-family: Quicksand;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 1%;
+        text-align: left;
+        cursor: pointer;
+      }
+      img {
+        width: 17px;
+      }
+    }
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 565px;
+    section {
+      @include flexbox(center, center, column);
+      box-sizing: border-box;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
+      width: 262px;
+      height: 269px;
+      transition: .3s;
+      div {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        @include flexbox(center, center);
+      }
+      &:first-child {
+        div {
+          background: rgb(55, 125, 255);
+        }
+      }
+      &:nth-child(2) {
+        div {
+          background: rgb(255, 45, 45);
+        }
+      }
+      &:nth-child(3) {
+        div {
+          background: rgb(124, 231, 97);
+        }
+      }
+      &:nth-child(4) {
+        div {
+          background: rgb(255, 168, 0);
+        }
+      }
+      &:hover {
+        box-sizing: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+
+        box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        background: rgb(255, 255, 255);
+      }
+    }
+  }
+}
