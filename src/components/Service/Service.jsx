@@ -25,29 +25,29 @@ const Service = () => {
         </div>
       </div>
       <div className="blogs">
-        <section>
+        <section className="blog-section">
           <div>
             <img src={media} alt="" />
           </div>
-          <h3>Social Media Management</h3>
+          <h3 className="blog-title">Social Media Management</h3>
         </section>
-        <section>
+        <section className="blog-section">
           <div>
             <img src={setting} alt="" />
           </div>
-          <h3>Search Engine Opimization</h3>
+          <h3 className="blog-title">Search Engine Opimization</h3>
         </section>
-        <section>
+        <section className="blog-section">
           <div>
             <img src={design} alt="" />
           </div>
-          <h3>Design</h3>
+          <h3 className="blog-title">Design</h3>
         </section>
-        <section>
+        <section className="blog-section">
           <div>
             <img src={tv} alt="" />
           </div>
-          <h3>Ads</h3>
+          <h3 className="blog-title">Ads</h3>
         </section>
       </div>
     </div>
