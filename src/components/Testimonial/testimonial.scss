@@ -52,6 +52,7 @@
         gap: 30px;
         span {
           @include flexbox(flex-start, flex-start, column);
+          gap: 20px;
           h1 {
             color: rgb(55, 125, 255);
             font-family: Quicksand;
