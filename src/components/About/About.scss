@@ -1,0 +1,110 @@
+.about {
+  h5 {
+    color: rgb(55, 125, 255);
+    font-family: "Quicksand";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 1%;
+    text-align: center;
+  }
+
+  h1 {
+    height: 100px;
+    color: rgb(29, 29, 29);
+    font-family: "Nunito";
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0.3%;
+    text-align: center;
+  }
+
+  .about__content {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+
+    .about__images {
+      width: 565px;
+      height: 440px;
+      position: relative;
+
+      .about__a1 {
+        position: absolute;
+        top: -16px;
+        left: -30px;
+      }
+
+      .about__img {
+        width: 565px;
+        height: 402px;
+        position: absolute;
+        z-index: 99;
+      }
+
+      .about__a2 {
+        position: absolute;
+        bottom: 25px;
+        right: -25px;
+      }
+    }
+
+    .about__text {
+      width: 610px;
+      p {
+        color: rgb(70, 70, 70);
+        font-family: "Quicksand";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 1%;
+        margin: 20px 0;
+      }
+
+      .about__buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .about__button {
+          width: 174px;
+          height: 48px;
+          border-radius: 24px;
+          box-shadow: 0px 4px 8px 0px rgba(55, 125, 255, 0.5);
+          background: rgb(55, 125, 255);
+          cursor: pointer;
+
+          color: rgb(255, 255, 255);
+          font-family: "Quicksand";
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 1%;
+        }
+
+        .about__btn {
+          width: 210px;
+          height: 48px;
+          box-sizing: border-box;
+          border: 1px solid rgb(55, 125, 255);
+          border-radius: 24px;
+          background: none;
+
+          color: rgb(55, 125, 255);
+          font-family: "Quicksand";
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 1%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}
